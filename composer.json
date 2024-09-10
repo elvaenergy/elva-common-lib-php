@@ -1,0 +1,40 @@
+{
+    "name": "elvaenergy/elva-common-lib-php",
+    "description": "Elva common library for PHP development",
+    "type": "library",
+    "license": "propietary",
+    "authors": [
+        {
+            "name": "Agustinus Wigeberg",
+            "email": "agustinus.wigeberg@elvaenergy.com"
+        }
+    ],
+    "keywords": [
+        "elva",
+        "web services",
+        "energy",
+        "integration"
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^11.0",
+        "illuminate/http": "^11.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Elva\\Common\\Lib\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
