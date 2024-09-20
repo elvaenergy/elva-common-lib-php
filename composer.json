@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.3",
+        "illuminate/http": "^11.0",
         "illuminate/support": "^11.0",
-        "illuminate/http": "^11.0"
+        "spatie/geocoder": "^3.16"
     },
     "config": {
         "optimize-autoloader": true,
