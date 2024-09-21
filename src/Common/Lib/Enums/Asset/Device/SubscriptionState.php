@@ -12,4 +12,5 @@ enum SubscriptionState: string
     case REVOKED = 'REVOKED';
     case INACTIVE = 'INACTIVE';
     case REQUESTED = 'REQUESTED';
+    case UNKNOWN = 'UNKNOWN';
 }
