@@ -8,6 +8,7 @@ enum OptimizationPhase: string
 {
     use Arrayable;
 
+    case NONE = 'NONE';
     case DATA_GATHERING = 'DATA_GATHERING';
     case OPTIMAL_BASELINE = 'OPTIMAL_BASELINE';
     case HEATING_SENSITIVITY = 'HEATING_SENSITIVITY';
