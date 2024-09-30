@@ -4,7 +4,7 @@ namespace Elva\Common\Lib\Enums\Asset\DeviceAlarm;
 
 use Elva\Common\Lib\Enums\Traits\Arrayable;
 
-enum Code: string
+enum Category: string
 {
     use Arrayable;
 
