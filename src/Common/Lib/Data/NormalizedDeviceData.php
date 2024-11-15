@@ -15,6 +15,7 @@ use Illuminate\Support\Carbon;
  * @property object|string|float $value
  * @property DataType $type
  * @property DataUnit|null $unit
+ * @property array $attributes
  */
 class NormalizedDeviceData
 {
@@ -23,17 +24,20 @@ class NormalizedDeviceData
     public object|string|float $value;
     public DataType $type;
     public DataUnit|null $unit;
+    public array $attributes;
 
     public function __construct(Carbon $timestamp,
                                 string $name,
                                 string|float|int $value,
                                 DataType $type,
-                                DataUnit|null $unit = null)
+                                DataUnit $unit = null,
+                                array $attributes = [])
     {
         $this->timestamp = $timestamp;
         $this->name = $name;
         $this->value = $value;
         $this->type = $type;
         $this->unit = $unit;
+        $this->attributes = $attributes;
     }
 }
