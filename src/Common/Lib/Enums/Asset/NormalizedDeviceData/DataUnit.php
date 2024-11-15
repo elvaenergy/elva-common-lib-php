@@ -12,6 +12,8 @@ enum DataUnit: string
     case FAHRENHEIT = '°F';
     case KELVIN = 'K';
     case KILOWATT_HOUR = 'kWh';
+    case WATT = 'W';
+    case WATT_PER_SQUARE_METER = 'W/sqm';
     case PERCENTAGE = '%';
     case YEAR = 'year';
     case MONTH = 'month';
@@ -21,6 +23,6 @@ enum DataUnit: string
     case SECOND = 'second';
     case MILLISECOND = 'millisecond';
     case METER_PER_SECOND = 'm/s';
-    case WATT_PER_SQUARE_METER = 'W/sqm';
+
     case NONE = 'NONE';
 }
