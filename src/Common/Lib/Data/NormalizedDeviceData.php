@@ -2,6 +2,7 @@
 
 namespace Elva\Common\Lib\Data;
 
+use Elva\Common\Lib\Data\Traits\ConvertToTimestreamData;
 use Elva\Common\Lib\Enums\Asset\NormalizedDeviceData\DataType;
 use Elva\Common\Lib\Enums\Asset\NormalizedDeviceData\DataUnit;
 use Illuminate\Support\Carbon;
@@ -19,6 +20,8 @@ use Illuminate\Support\Carbon;
  */
 class NormalizedDeviceData
 {
+    use ConvertToTimestreamData;
+
     public Carbon $timestamp;
     public string $name;
     public object|string|float $value;
