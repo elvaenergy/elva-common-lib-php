@@ -23,6 +23,7 @@ enum DataUnit: string
     case SECOND = 'second';
     case MILLISECOND = 'millisecond';
     case METER_PER_SECOND = 'm/s';
+    case BAR = 'bar';
 
     case NONE = 'NONE';
 }
