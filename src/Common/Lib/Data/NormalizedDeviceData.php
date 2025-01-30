@@ -24,14 +24,14 @@ class NormalizedDeviceData
 
     public Carbon $timestamp;
     public string $name;
-    public object|string|float|int $value;
+    public object|string|float|int|null $value;
     public DataType $type;
     public DataUnit|null $unit;
     public array $attributes;
 
     public function __construct(Carbon $timestamp,
                                 string $name,
-                                object|string|float|int $value,
+                                object|string|float|int|null $value,
                                 DataType $type,
                                 DataUnit $unit = null,
                                 array $attributes = [])
